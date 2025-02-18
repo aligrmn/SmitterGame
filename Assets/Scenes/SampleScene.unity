@@ -497,9 +497,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 180dd9b746d918e448e737837d2c1f84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slider: {fileID: 632143171}
-  duration: 3
-  isSliderActive: 0
 --- !u!114 &66279686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -512,9 +509,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2de0f16a79af344e968b6bb4938478b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPlayerInRange: 0
-  CossText: {fileID: 0}
-  Coss: 
 --- !u!1001 &71228006
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -705,7 +699,7 @@ RectTransform:
   m_Father: {fileID: 108529059}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -1130,9 +1124,9 @@ RectTransform:
   m_Father: {fileID: 498247645}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -17, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &121191607
 MonoBehaviour:
@@ -1267,7 +1261,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1674626610}
   m_HandleRect: {fileID: 1674626609}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -2049,7 +2043,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2b6676502daf7649a794e595f4aa30a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shopItems: []
+  shopItems:
+  - item: {fileID: 11400000, guid: a1f31c24fe776d6478b0a54561f34344, type: 2}
+    quantity: 100
+  - item: {fileID: 11400000, guid: 4ea418f7ee362f24f900887fff2a46fe, type: 2}
+    quantity: 100
+  - item: {fileID: 11400000, guid: 3a96723c6a9c11a48919120a915e7d3f, type: 2}
+    quantity: 100
+  - item: {fileID: 11400000, guid: 62527b562a1a52743b80bdbf7e41eb84, type: 2}
+    quantity: 100
+  - item: {fileID: 11400000, guid: 79ee77fe9f901e84c87676596ed78b13, type: 2}
+    quantity: 100
+  - item: {fileID: 11400000, guid: 6c239974bbbd4ed4eb4af565e6ea242c, type: 2}
+    quantity: 100
 --- !u!114 &310115785
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2788,9 +2794,9 @@ RectTransform:
   m_Father: {fileID: 1326095862}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -17, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &496506006
 MonoBehaviour:
@@ -3556,11 +3562,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30fd840545dbf974e8325a13d746f98e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerInventory: {fileID: 0}
-  IronIngot: {fileID: 682520805}
-  SteelIngot: {fileID: 1725352274}
-  BronzeIngot: {fileID: 547728472}
-  progressbarcontroller: {fileID: 632143173}
 --- !u!1 &553018097
 GameObject:
   m_ObjectHideFlags: 0
@@ -3613,13 +3614,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39136424ff8521d489ae2905594dcd35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shopInventory: {fileID: 0}
-  playerInventory: {fileID: 0}
-  CurrentQuantity: {fileID: 1564714364}
-  NotEnoughCoinWarning: {fileID: 1265884598}
-  NotEnoughResourcesWarning: {fileID: 1750384838}
-  PlayerCopperOre: {fileID: 0}
-  PlayerCopperOreQ: {fileID: 0}
 --- !u!114 &553018100
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4370,9 +4364,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 180dd9b746d918e448e737837d2c1f84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slider: {fileID: 632143171}
-  duration: 3
-  isSliderActive: 0
 --- !u!1 &682520804
 GameObject:
   m_ObjectHideFlags: 0
@@ -4519,11 +4510,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30fd840545dbf974e8325a13d746f98e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerInventory: {fileID: 0}
-  IronIngot: {fileID: 682520805}
-  SteelIngot: {fileID: 1725352274}
-  BronzeIngot: {fileID: 547728472}
-  progressbarcontroller: {fileID: 632143173}
 --- !u!1 &693473833 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4296846833123686498, guid: 9ba2d35b219fe4247a98994cbe4cc3ef, type: 3}
@@ -7295,7 +7281,125 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfe72f66362ad5845b9d43243fea90ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  items: []
+  items:
+  - item: {fileID: 11400000, guid: a1f31c24fe776d6478b0a54561f34344, type: 2}
+    quantity: 0
+  - item: {fileID: 11400000, guid: 4ea418f7ee362f24f900887fff2a46fe, type: 2}
+    quantity: 0
+  - item: {fileID: 11400000, guid: 3a96723c6a9c11a48919120a915e7d3f, type: 2}
+    quantity: 0
+  - item: {fileID: 11400000, guid: 62527b562a1a52743b80bdbf7e41eb84, type: 2}
+    quantity: 0
+  - item: {fileID: 11400000, guid: ff4fc99e30055ef479edc6b005f647e5, type: 2}
+    quantity: 0
+  - item: {fileID: 11400000, guid: 79ee77fe9f901e84c87676596ed78b13, type: 2}
+    quantity: 0
+  - item: {fileID: 11400000, guid: 6c239974bbbd4ed4eb4af565e6ea242c, type: 2}
+    quantity: 0
+  - item: {fileID: 11400000, guid: b02edd849a7dcac428f0fbaad76d81b1, type: 2}
+    quantity: 0
+  - item: {fileID: 11400000, guid: fefbf4934fa8bbb46b5c530f15e77cb3, type: 2}
+    quantity: 0
+  - item: {fileID: 11400000, guid: ff47ba7461b64a94b9d807e903700485, type: 2}
+    quantity: 0
+  - item: {fileID: 11400000, guid: a179b3d2a1c47a2438716ca2b143e3a7, type: 2}
+    quantity: 0
+  - item: {fileID: 11400000, guid: a08535742359030488a2144ef5dffaba, type: 2}
+    quantity: 0
+  - item: {fileID: 11400000, guid: d2c3ba8a12e801248bafee317fd8cb2e, type: 2}
+    quantity: 0
+  - item: {fileID: 11400000, guid: 8d49dc4c8f7a7154e9b445cbfc309979, type: 2}
+    quantity: 0
+  - item: {fileID: 11400000, guid: 2727b361ded1d234dbbf8725b7b15823, type: 2}
+    quantity: 0
+  - item: {fileID: 11400000, guid: f9f618b9d4f0a8b48a53dd97ff5b326a, type: 2}
+    quantity: 0
+  - item: {fileID: 11400000, guid: e6f84df5516466f41928dc21ec913b34, type: 2}
+    quantity: 0
+  - item: {fileID: 11400000, guid: 8ceadfe37cccc76428e2e49910b3bbeb, type: 2}
+    quantity: 0
+  - item: {fileID: 11400000, guid: 5b404a877cf93e049b6e83a69b77da99, type: 2}
+    quantity: 0
+  - item: {fileID: 11400000, guid: 769ad332e1e78504cb67e21ab335dd57, type: 2}
+    quantity: 0
+  - item: {fileID: 11400000, guid: 70206a5ba8c1c6b47b799fa7f05112a7, type: 2}
+    quantity: 0
+  - item: {fileID: 11400000, guid: 7c0b1f4b3ae42304f89e80528bf1bb80, type: 2}
+    quantity: 0
+  - item: {fileID: 11400000, guid: 4b4fd71599a420e41b68ef3f4367111f, type: 2}
+    quantity: 0
+  - item: {fileID: 11400000, guid: 5b3b2b6446e10fb45a53da625862382c, type: 2}
+    quantity: 0
+  - item: {fileID: 11400000, guid: e0885d909adb9364e84ec2cd3bec5074, type: 2}
+    quantity: 0
+  - item: {fileID: 11400000, guid: 1e20d3b6aa10eec46a7e131113f25de5, type: 2}
+    quantity: 0
+  - item: {fileID: 11400000, guid: d661828dfc86e394db790791e357ad79, type: 2}
+    quantity: 0
+  - item: {fileID: 11400000, guid: 7dc04f464daf6dc4bab6caac75b1609f, type: 2}
+    quantity: 0
+  - item: {fileID: 11400000, guid: 7a145c589458a2c4982f9d5b6ac4a0c4, type: 2}
+    quantity: 0
+  - item: {fileID: 11400000, guid: ddc46320ea7be0f4c96c83ecf6d90439, type: 2}
+    quantity: 0
+  - item: {fileID: 11400000, guid: 62ea5040a980252419e06a61fcd632ac, type: 2}
+    quantity: 0
+  - item: {fileID: 11400000, guid: cbe70bbefaecfa14db62d3158f4408de, type: 2}
+    quantity: 0
+  - item: {fileID: 11400000, guid: ea860a7b8443d4849ab6326edf7a97c1, type: 2}
+    quantity: 0
+  - item: {fileID: 11400000, guid: e2884210ddfce5743a691bf4f432d553, type: 2}
+    quantity: 0
+  - item: {fileID: 11400000, guid: 00e73b3f11cae28458838dc26b95e974, type: 2}
+    quantity: 0
+  - item: {fileID: 11400000, guid: 3874b46e1c677b04094099c9149ef8b3, type: 2}
+    quantity: 0
+  - item: {fileID: 11400000, guid: aaba2f21a7bc1fa45abdfa00948dc53a, type: 2}
+    quantity: 0
+  - item: {fileID: 11400000, guid: 942a6dce65fd0894fbb62bbdf1799ab7, type: 2}
+    quantity: 0
+  - item: {fileID: 11400000, guid: 908e4937c69bf9a4aafafcf20a14b7e5, type: 2}
+    quantity: 0
+  - item: {fileID: 11400000, guid: e15162e674e7d504782864ee4e094c1a, type: 2}
+    quantity: 0
+  - item: {fileID: 11400000, guid: 5e52eaad7fc04864f9875d27a45ccf80, type: 2}
+    quantity: 0
+  - item: {fileID: 11400000, guid: 575c6b02f34e3124c89b6139b909ab92, type: 2}
+    quantity: 0
+  - item: {fileID: 11400000, guid: 13eb79c3f874b2e4b9331558a65093fd, type: 2}
+    quantity: 0
+  - item: {fileID: 11400000, guid: d2dfa04fa6125854ba6706441f446c5e, type: 2}
+    quantity: 0
+  - item: {fileID: 11400000, guid: 01e9dc7aaddc3254ca8e4840aacd7697, type: 2}
+    quantity: 0
+  - item: {fileID: 11400000, guid: 4496b70596988664c98c3ba1f900f5c8, type: 2}
+    quantity: 0
+  - item: {fileID: 11400000, guid: a412509d7c412584b9a0ab9ce61aab9e, type: 2}
+    quantity: 0
+  - item: {fileID: 11400000, guid: 09d9abcdeccb15d439e468ff9897442a, type: 2}
+    quantity: 0
+  - item: {fileID: 11400000, guid: 0a38c7ad025e16b4285966eb6b1a77dd, type: 2}
+    quantity: 0
+  - item: {fileID: 11400000, guid: 046bc076b97e19840b27971a6ba7bf73, type: 2}
+    quantity: 0
+  - item: {fileID: 11400000, guid: ec29d08896302ef4a8d42dad63481089, type: 2}
+    quantity: 0
+  - item: {fileID: 11400000, guid: 0dcd68118b89f1d498a462e7ea91ecb6, type: 2}
+    quantity: 0
+  - item: {fileID: 11400000, guid: 0cf9c78157d457745b9c50443b0aabad, type: 2}
+    quantity: 0
+  - item: {fileID: 11400000, guid: de31e18fe1521a14796dafd179b1436c, type: 2}
+    quantity: 0
+  - item: {fileID: 11400000, guid: d60f4defab769ef46b1427a1209687a5, type: 2}
+    quantity: 0
+  - item: {fileID: 11400000, guid: b27a1880ff1235940b9c396a72263495, type: 2}
+    quantity: 0
+  - item: {fileID: 11400000, guid: d12e39c2c15f57847af1e4963f39020c, type: 2}
+    quantity: 0
+  - item: {fileID: 11400000, guid: 0d8e57aa40faea1488f24a4a4f3c2d5d, type: 2}
+    quantity: 0
+  - item: {fileID: 11400000, guid: 8781f266030379c4ca6641c64e9a6632, type: 2}
+    quantity: 0
 --- !u!1 &1312576765
 GameObject:
   m_ObjectHideFlags: 0
@@ -8743,6 +8847,93 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60a88ace8b019d846bbbd98c4292d0b3, type: 3}
+--- !u!1 &1509129381
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1509129382}
+  - component: {fileID: 1509129383}
+  m_Layer: 0
+  m_Name: "\xC7al\u0131\u015Fma Y\xFCzeyi 4_0"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1509129382
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1509129381}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -167.07, y: -10, z: 0}
+  m_LocalScale: {x: 40.39, y: 40.39, z: 40.39}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 1757115976}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1509129383
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1509129381}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 8770541048025219379, guid: 36cbe824f9f7fc849ae04c1fc06ce088, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 19.2, y: 10.8}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1542111644
 GameObject:
   m_ObjectHideFlags: 0
@@ -9266,7 +9457,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2117258001}
   m_HandleRect: {fileID: 2117258000}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -9343,7 +9534,7 @@ RectTransform:
   m_Father: {fileID: 2022637814}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -9636,11 +9827,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30fd840545dbf974e8325a13d746f98e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerInventory: {fileID: 0}
-  IronIngot: {fileID: 682520805}
-  SteelIngot: {fileID: 1725352274}
-  BronzeIngot: {fileID: 547728472}
-  progressbarcontroller: {fileID: 632143173}
 --- !u!1 &1729674408
 GameObject:
   m_ObjectHideFlags: 0
@@ -9928,7 +10114,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1757115972
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9936,7 +10122,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1757115971}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a47f4e1837344db47a3fe181ff12a03c, type: 3}
   m_Name: 
@@ -9971,10 +10157,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -10017,6 +10203,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1509129382}
   - {fileID: 397349272}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10541,9 +10728,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2de0f16a79af344e968b6bb4938478b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPlayerInRange: 0
-  CossText: {fileID: 0}
-  Coss: Cosss
 --- !u!1001 &1909535260
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11682,7 +11866,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &2091857824
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11989,7 +12173,7 @@ RectTransform:
   m_Father: {fileID: 1384510345}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -12493,8 +12677,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Iron Ore
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c7b83cad83ff0464bad3380bad1afe01, type: 2}
+  m_sharedMaterial: {fileID: 8219639127348114699, guid: c7b83cad83ff0464bad3380bad1afe01, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -12618,13 +12802,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab0fa4e3358ac6a4d87807147b3b21c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shopInventory: {fileID: 0}
-  playerInventory: {fileID: 0}
-  CurrentQuantity: {fileID: 0}
-  NotEnoughCoinWarning: {fileID: 0}
-  NotEnoughResourcesWarning: {fileID: 0}
-  PlayerIronOre: {fileID: 0}
-  PlayerIronOreQ: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
