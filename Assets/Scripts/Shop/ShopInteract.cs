@@ -3,7 +3,7 @@ using UnityEngine;
 public class ShopInteract : MonoBehaviour
 {
 
-    public Collider2D shopTrigger; 
+    public Collider2D playerTrigger; 
     private bool isPlayerInRange;
     public GameObject ShopMenu; 
 
